@@ -19,8 +19,8 @@ sources:
               - not_null
         loaded_at_field: _etl_loaded_at
         freshness:
-          warn_after: {count: 1, period: hour}
-          error_after: {count: 2, period: hour}
+          warn_after: {count: 15, period: hour}
+          error_after: {count: 15, period: hour}
 
 models:
   - name: stg_customers
